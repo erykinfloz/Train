@@ -1,0 +1,156 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Trains</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      AnyTime Is Train Time
+    </h1>
+    <h2>
+      CHOO CHOOOOOOOO
+    </h2>
+  </div>
+  <form>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Train Name</label>
+              <input type="text" class="trainName" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Train Name">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Destination</label>
+              <input type="text" class="destination" id="exampleInputPassword1" placeholder="Enter The Destination">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">First Train</label>
+                <input type="text" class="trainTime" id="exampleInputPassword1" placeholder="Enter The Destination">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Frequency</label>
+                  <input type="text" class="frequency" id="exampleInputPassword1" placeholder="Enter The Destination">
+                </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+  <script src="assets/javascript/app.js"></script>
+</body>
+</html> -->
+
+<html lang="en-us">
+    <head>
+
+    <meta charset="utf-8">
+    <title>Train Times</title>
+    <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Ref -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+
+    <!-- moment js ref -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+  </head>
+
+  <body>
+
+    <div class = "jumbotron">
+      <h1 class="text-center">Train Times</h1>
+      <h2 class="text-center"> Track Your Train Times Here</h2>
+    </div>
+
+    <br>
+
+    <div class="row">
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+
+        <div class="panel panel-default">
+
+            <h3>Arrival Times</h3>
+          </div>
+
+          <div>
+            <table class="table" id= "trainTable">
+                <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency(min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+
+            <tbody></tbody>
+
+            </table>
+        </div>
+        <br>
+
+        <form>
+
+          <div class="form-group">
+
+              <input type="text" class="form-control"
+              id="name" placeholder="Train Name">
+
+              <input type="text" class="form-control"
+              id="dest" placeholder="Destination" >
+
+
+              <input type="text" class="form-control" id="firstTime" placeholder="First Train Time(24:00)">
+
+
+              <input type="text" class="form-control" id="freq" placeholder="Frequency (min)">
+
+               <button class="btn btn-primary btn-lg" id="trainInfoBtn" type="submit">Submit</button>
+
+            </div>
+          </form>
+      </div>
+    </div>
+    <script src="assets/javascript/app.js"></script>
+  </body>
+  </html

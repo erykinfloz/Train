@@ -1,0 +1,52 @@
+/* .container {
+  background: brown;
+  border-bottom-left-radius: 500px;
+  text-align: center;
+  border-bottom-right-radius: 500px;
+  color: white;
+} */
+body {
+  background-image: url('https://media.giphy.com/media/cEXA3QMGHg1t6/giphy.gif');
+}
+/* .table {
+  text-align: center;
+  color: white;
+  width: 900px;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+form {
+  color: rgb(255, 255, 255);
+  width: 200px;
+}
+.form-group {
+  margin-left: 250px;
+  width: 900px;
+  color: rgb(255, 255, 255);
+}
+.btn {
+  color: black;
+  background:teal;
+  margin-left: 450px;
+  width: 500px;
+}
+.form-control {
+  background: rgb(58, 48, 48);
+} */
+.jumbotron {
+  background-image: url('https://media.giphy.com/media/mhh4VA7LKYL9S/giphy.gif');
+  background-size: 15%;
+  border-radius: 50px;
+  color: white;
+}
+/* h1 {
+  position: relative;
+  bottom: 50px;
+}
+h3 {
+  position: relative;
+  top: 55px;
+} */
+table {
+  color: white;
+}
